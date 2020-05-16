@@ -1,0 +1,5 @@
+.nuxt
+*.log
+assets
+dist
+node_modules

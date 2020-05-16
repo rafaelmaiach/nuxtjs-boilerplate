@@ -1,0 +1,9 @@
+.nuxt
+**/*.js
+**/*.json
+**/*.log
+assets/images
+coverage
+dist
+static
+LICENSE

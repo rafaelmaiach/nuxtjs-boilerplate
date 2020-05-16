@@ -1,0 +1,63 @@
+{
+	"name": "nuxtjs-boilerplate",
+	"version": "1.0.0",
+	"description": "A personal nuxtjs boilerplate",
+	"author": "rafaelmaiach",
+	"private": true,
+	"scripts": {
+		"dev": "nuxt",
+		"build": "nuxt build",
+		"start": "nuxt start",
+		"generate": "nuxt generate",
+		"lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+		"lint-styles": "stylelint .",
+		"test": "jest"
+	},
+	"lint-staged": {
+		"*.{js,vue}": "yarn lint",
+		"*.{css,vue}": "yarn lint-styles"
+	},
+	"husky": {
+		"hooks": {
+			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+			"pre-commit": "lint-staged"
+		}
+	},
+	"dependencies": {
+		"@nuxtjs/axios": "5.10.3",
+		"core-js": "2.6.11",
+		"nuxt": "2.12.2"
+	},
+	"devDependencies": {
+		"@aceforth/nuxt-optimized-images": "^1.0.1",
+		"@commitlint/cli": "^8.3.5",
+		"@commitlint/config-conventional": "^8.3.4",
+		"@nuxtjs/dotenv": "1.4.1",
+		"@nuxtjs/eslint-config": "3.0.0",
+		"@nuxtjs/eslint-module": "2.0.0",
+		"@nuxtjs/pwa": "3.0.0-beta.20",
+		"@nuxtjs/style-resources": "^1.0.0",
+		"@nuxtjs/stylelint-module": "4.0.0",
+		"@vue/test-utils": "1.0.2",
+		"babel-eslint": "10.1.0",
+		"babel-jest": "26.0.1",
+		"eslint": "6.8.0",
+		"eslint-plugin-nuxt": "1.0.0",
+		"eslint-plugin-vue": "6.2.2",
+		"eslint-plugin-vue-a11y": "^0.0.31",
+		"husky": "4.2.5",
+		"imagemin-pngquant": "^8.0.0",
+		"jest": "24.9.0",
+		"lazysizes": "^5.2.0",
+		"lint-staged": "10.2.2",
+		"lqip-loader": "^2.2.0",
+		"mozjpeg": "^6.0.1",
+		"node-sass": "4.14.1",
+		"rfs": "9.0.3",
+		"sass-loader": "8.0.2",
+		"stylelint": "13.3.3",
+		"stylelint-config-sass-guidelines": "7.0.0",
+		"vue-jest": "4.0.0-beta.2",
+		"webp-loader": "^0.6.0"
+	}
+}
